@@ -38,7 +38,19 @@ Ensure these libraries are installed in your environment before running the proj
 
 ## Usage
 
-To run the application:
-**Start Streamlit**: Launch the application by running the Streamlit app file.
-   ```bash
-   [streamlit run app.py](https://export-control-class-hierarchy.streamlit.app/)
+To access the live application, visit: [Export Control Class Hierarchy](https://export-control-class-hierarchy.streamlit.app/)
+
+### Instructions
+
+1. **Enter Information**: In the text box provided, type any specific information related to export controls (e.g., "guns less than .5 caliber").
+2. **Search**: Click the **Search** button to retrieve the most relevant export codes.
+3. **Hover Over Codes**: Hover over each retrieved code to view a tooltip with its description.
+
+## Project Structure
+
+```plaintext
+Export-Control-Class-Hierarchy/
+├── Data_Dassault_Cleaned_with_Embeddings.pkl  # Precomputed embeddings and dataset file
+├── app.py                                     # Main Streamlit application file
+├── requirements.txt                           # Required libraries
+└── README.md                                  # Project documentation
