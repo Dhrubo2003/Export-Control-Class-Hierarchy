@@ -49,48 +49,70 @@ def find_relevant_codes_df(user_input, df, max_results=4, threshold=0.5):
 st.set_page_config(page_title="Export Control Class Hierarchy", layout="centered")
 st.title("🔍 Export Control Class Hierarchy")
 
+# Background and main content styling
 st.markdown(
     """
     <style>
+    body {
+        background: linear-gradient(to bottom right, #4A00E0, #8E2DE2);  /* Gradient background */
+        color: #FFFFFF;
+    }
     .main-content {
+        max-width: 600px;
+        margin: auto;
         padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .stTextInput>div>div>input {
+        width: 100% !important;
+        padding: 12px;
         border-radius: 8px;
-        background-color: #f9f9f9;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: none;
+        margin-bottom: 15px;
     }
-    
+    .stButton>button {
+        width: 100%;
+        background-color: #6A1B9A;
+        color: #FFFFFF;
+        padding: 10px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+    }
+    .stButton>button:hover {
+        background-color: #8E44AD;
+    }
     .tooltip-container {
-        margin-bottom: 20px;
+        margin-top: 20px;
+        font-size: 1.1em;
+        color: #FFFFFF;
     }
-    
     .tooltip {
         position: relative;
         display: inline-block;
-        cursor: pointer;
-        font-size: 1.1em;
         font-weight: bold;
-        color: #2c3e50;
-        padding: 10px;
-        background-color: #ecf0f1;
-        border-radius: 5px;
+        cursor: pointer;
     }
-    
     .tooltip .tooltiptext {
         visibility: hidden;
-        width: 300px;
-        background-color: #555;
-        color: #fff;
+        width: 350px;
+        background-color: #2E2E2E;
+        color: #FFF;
         text-align: left;
-        border-radius: 5px;
-        padding: 8px;
+        border-radius: 6px;
+        padding: 10px;
         position: absolute;
         z-index: 1;
-        left: 0;
+        left: 50%;
+        margin-left: -175px;
         margin-top: 5px;
         opacity: 0;
         transition: opacity 0.3s;
     }
-    
     .tooltip:hover .tooltiptext {
         visibility: visible;
         opacity: 1;
@@ -102,9 +124,11 @@ st.markdown(
 
 st.markdown('<div class="main-content">', unsafe_allow_html=True)
 
+# User input box and button
 user_input = st.text_input("Enter your search information:")
 button = st.button("Search")
 
+# Display relevant codes when button is clicked
 if button:
     relevant_codes = find_relevant_codes_df(user_input, df, max_results=4, threshold=0.5)
     
