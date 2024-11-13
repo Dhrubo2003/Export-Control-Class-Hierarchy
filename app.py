@@ -57,9 +57,7 @@ st.markdown(
         background: linear-gradient(to bottom right, #4A00E0, #8E2DE2);  /* Gradient background */
         color: #FFFFFF;
     }
-    /* Remove Streamlit's default header padding and background */
-    header { 
-        visibility: hidden;
+
     }
     .main-content {
         max-width: 600px;
@@ -104,7 +102,7 @@ st.markdown(
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 350px;
-        background-color: #FFFFFF;
+        background-color: #2E2E2E;
         color: #FFF;
         text-align: left;
         border-radius: 6px;
