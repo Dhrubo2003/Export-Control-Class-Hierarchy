@@ -54,3 +54,6 @@ Export-Control-Class-Hierarchy/
 ├── app.py                                     # Main Streamlit application file
 ├── requirements.txt                           # Required libraries
 └── README.md                                  # Project documentation
+```
+## Demo
+https://export-control-class-hierarchy.streamlit.app/
