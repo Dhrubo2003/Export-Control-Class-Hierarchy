@@ -55,5 +55,3 @@ Export-Control-Class-Hierarchy/
 ├── requirements.txt                           # Required libraries
 └── README.md                                  # Project documentation
 ```
-## Demo
-https://export-control-class-hierarchy.streamlit.app/
