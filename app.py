@@ -104,7 +104,7 @@ st.markdown(
     .tooltip .tooltiptext {
         visibility: hidden;
         width: 350px;
-        background-color: #2E2E2E;
+        background-color: #FFFFFF;
         color: #FFF;
         text-align: left;
         border-radius: 6px;
