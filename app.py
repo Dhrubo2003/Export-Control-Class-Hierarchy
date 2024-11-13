@@ -101,21 +101,7 @@ st.markdown(
         font-weight: bold;
         cursor: pointer;
     }
-    .tooltip .tooltiptext {
-        visibility: hidden;
-        width: 350px;
-        background-color: #2E2E2E;
-        color: #FFF;
-        text-align: left;
-        border-radius: 6px;
-        padding: 10px;
-        position: absolute;
-        z-index: 1;
-        left: 50%;
-        margin-left: -175px;
-        margin-top: 5px;
-        opacity: 0;
-        transition: opacity 0.3s;
+    
     }
     .tooltip:hover .tooltiptext {
         visibility: visible;
