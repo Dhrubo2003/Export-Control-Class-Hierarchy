@@ -110,7 +110,7 @@ st.markdown(
         left: 50%;
         margin-left: -175px;
         margin-top: 5px;
-        opacity: 0;
+        opacity: 100;
         transition: opacity 0.3s;
     }
     .tooltip:hover .tooltiptext {
