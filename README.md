@@ -8,8 +8,7 @@
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
-- [Customization](#customization)
-- [License](#license)
+
 
 ## Project Overview
 
