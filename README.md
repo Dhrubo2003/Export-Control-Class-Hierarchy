@@ -37,7 +37,7 @@ Ensure these libraries are installed in your environment before running the proj
 
 ## Usage
 
-To access the live application, visit: [Export Control Class Hierarchy](https://export-control-class-hierarchy.streamlit.app/)
+To access the live application, visit: [Export Control Class Hierarchy](https://exportcontrol.streamlit.app/)
 
 ### Instructions
 
