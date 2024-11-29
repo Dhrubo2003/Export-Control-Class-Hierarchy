@@ -6,7 +6,7 @@ from sentence_transformers import SentenceTransformer
 # File path for saving embeddings
 embedding_file = 'Data_Dassault_Cleaned_with_Embeddings.pkl'
 
-model = SentenceTransformer('stsb-roberta-large')
+model = SentenceTransformer('all-MiniLM-L6-v2')
 df = pd.read_pickle(embedding_file)
 
 # Function to normalize a vector using NumPy
